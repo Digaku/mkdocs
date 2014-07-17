@@ -129,6 +129,10 @@ class Page(object):
 class Header(object):
     def __init__(self, title, children):
         self.title, self.children = title, children
+        head_url = '/'
+        if len(children) > 0:
+            head_url = children[0].abs_url
+        self.url = head_url
         self.active = False
 
     def __str__(self):
