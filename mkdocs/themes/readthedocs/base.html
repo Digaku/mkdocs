@@ -22,7 +22,7 @@
   {% endfor %}
 
   <style>
-    body {font-size: 90%;}
+    /*body {font-size: 90%;}*/
     pre, code {font-size: 100%;}
     h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
   </style>
@@ -36,10 +36,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
         <a href="{{ homepage_url }}" class="icon icon-home"> {{ site_name }}</a>
-        {% include "searchbox.html" %}
+        <!-- disable search untuk sementara {% include "searchbox.html" %} -->
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <div class="wy-menu wy-menu-vertical" role="navigation" aria-label="main navigation">
       {% include "toc.html" %}
       </div>
       &nbsp;
